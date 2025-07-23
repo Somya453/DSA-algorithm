@@ -5,10 +5,11 @@ void func(int i, int n){
    
    // Base Condition.
    if(i>n) return;
-    
+   printf("%d ",i);
+
    // Function call to print (n-1) integers.
    func(i+1,n);
-   cout<<i<<endl;
+//    printf("%d",i);
 
 }
 
