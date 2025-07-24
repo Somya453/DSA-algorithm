@@ -7,8 +7,9 @@ void func(int i, int n){
    if(i<1) return;
    
    // Function call to print (n-1) integers.
-   func(i-1,n);
-   cout<<i<<endl;
+   printf("%d ",i);
+   func(i+1,n);
+   
 
 }
 

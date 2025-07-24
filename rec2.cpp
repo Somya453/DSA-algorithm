@@ -4,19 +4,20 @@ using namespace std;
 void func(int i, int n){
    
    // Base Condition.
-   if(i<1) return;
-   
+   if(i>n) return;
+   printf("%d ",i);
+
    // Function call to print (n-1) integers.
-   func(i-1,n);
-   cout<<i<<endl;
+   func(i+1,n);
+//    printf("%d",i);
 
 }
 
 int main(){
-  
-  // Here, let’s take the value of n to be 4.
-  int n = 4;
-  func(n,n);
+
+  // Here, let’s take the value of n to be 5.
+  int n = 5;
+  func(1,n);
   return 0;
 
 }
